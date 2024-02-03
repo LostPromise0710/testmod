@@ -1,11 +1,11 @@
 {
 	"schemaVersion": 1,
-	"id": "test",
+	"id": "testmod",
 	"version": "${version}",
-	"name": "test",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Test Mod",
+	"description": "This is a test mod",
 	"authors": [
-		"Me!"
+		"Romational"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -16,10 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.lostpromise.testmod.Test"
+			"net.lostpromise.testmod.TestMod"
+		],
+		"client": [
+			"net.lostpromise.testmod.TestModClient"
 		],
 		"fabric-datagen": [
-			"net.lostpromise.testmod.TestDataGenerator"
+			"net.lostpromise.testmod.TestModDataGenerator"
 		]
 	},
 	"mixins": [
